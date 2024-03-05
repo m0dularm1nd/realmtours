@@ -1,15 +1,17 @@
-const express = require('express');
+import express from 'express';
+
+
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.status(200).json({
     email: 'Hello motherfucker!',
-    password: 'manyka',
+    password: 'ba3bsa',
   });
 });
 
-app.post('/', (req, res) => {
+app.post('/', (_req, res) => {
   res.send('bas yaaad');
 });
 const port = 3000;
